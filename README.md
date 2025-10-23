@@ -27,7 +27,27 @@ Your current scripts are organized as separate entry points targeting different 
 ---
 
 ## Recommended Repository Layout
-
+realsense-template-matching/
+├─ README.md
+├─ requirements.txt
+├─ config/
+│  └─ settings.yaml
+├─ data/
+│  ├─ template.jpg
+│  └─ outputs/
+├─ scripts/
+│  ├─ depth_tm.py          # (T1, T2, T4)
+│  ├─ rgb_tm.py            # (T6)
+│  ├─ orb_match_cc.py      # (T7, t8)
+│  ├─ orb_match_ratio.py   # (t9, t10)
+│  ├─ image_playground.py  # (T3)
+│  └─ utils.py             # (T5 + helpers)
+└─ scripts/
+   ├─ run_depth_tm.bat
+   ├─ run_rgb_tm.bat
+   ├─ run_orb_cc.bat
+   └─ run_orb_ratio.bat
+more description............................>>>> 
 ```
 realsense-template-matching/
 ├─ README.md                  # (this guide)
@@ -235,5 +255,5 @@ python src/image_playground.py --image ./data/template.jpg
 4. Copy your template to `data/template.jpg` (or update `settings.yaml`).
 5. Run one of the scripts (depth, rgb, orb).
 
-Happy building! 🎯
+
 
